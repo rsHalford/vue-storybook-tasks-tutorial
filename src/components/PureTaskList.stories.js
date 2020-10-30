@@ -1,15 +1,15 @@
-import PureTaskList from './PureTaskList';
-import { taskData, actionsData } from './Task.stories';
+import PureTaskList from "./PureTaskList";
+import { taskData, actionsData } from "./Task.stories";
 
 const paddedList = () => {
   return {
-    template: '<div style="padding: 3rem;"><story/></div>',
+    template: '<div style="padding: 3rem;"><story/></div>'
   };
 };
 export default {
-  title: 'TaskList',
+  title: "TaskList",
   excludeStories: /.*Data$/,
-  decorators: [paddedList],
+  decorators: [paddedList]
 };
 
 export const defaultTasksData = [

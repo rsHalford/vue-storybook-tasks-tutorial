@@ -3,7 +3,9 @@
     <div v-if="loading">
       <div class="loading-item" v-for="(n, index) in 5" :key="index">
         <span class="glow-checkbox" />
-        <span class="glow-text"> <span>Loading</span> <span>cool</span> <span>state</span> </span>
+        <span class="glow-text">
+          <span>Loading</span> <span>cool</span> <span>state</span>
+        </span>
       </div>
     </div>
     <div class="list-items" v-if="noTasks && !this.loading">
@@ -26,35 +28,35 @@
 </template>
 
 <script>
-  import Task from './Task';
-  export default {
-    name: 'pure-task-list',
-    props: {
-      loading: {
-        type: Boolean,
-        default: false,
-      },
-      tasks: {
-        type: Array,
-        default: () => []
-      },
+import Task from "./Task";
+export default {
+  name: "pure-task-list",
+  props: {
+    loading: {
+      type: Boolean,
+      default: false
     },
-    components: {
-      Task,
+    tasks: {
+      type: Array,
+      default: () => []
+    }
+  },
+  components: {
+    Task
+  },
+  computed: {
+    noTasks() {
+      return this.tasks.length === 0;
     },
-    computed: {
-      noTasks() {
-        return this.tasks.length === 0;
-      },
-      showTasks() {
-        return !this.loading && !this.noTasks;
-      },
-      tasksInOrder() {
-        return [
-          ...this.tasks.filter(t => t.state === 'TASK_PINNED'),
-          ...this.tasks.filter(t => t.state !== 'TASK_PINNED'),
-        ];
-      },
+    showTasks() {
+      return !this.loading && !this.noTasks;
     },
-  };
+    tasksInOrder() {
+      return [
+        ...this.tasks.filter(t => t.state === "TASK_PINNED"),
+        ...this.tasks.filter(t => t.state !== "TASK_PINNED")
+      ];
+    }
+  }
+};
 </script>

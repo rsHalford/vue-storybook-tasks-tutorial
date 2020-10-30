@@ -19,18 +19,18 @@
 </template>
 
 <script>
-  import TaskList from './TaskList.vue';
+import TaskList from "./TaskList.vue";
 
-  export default {
-    name: 'pure-inbox-screen',
-    props: {
-      error: {
-        type: Boolean,
-        default: false,
-      },
-    },
-    components: {
-      TaskList,
-    },
-  };
+export default {
+  name: "pure-inbox-screen",
+  props: {
+    error: {
+      type: Boolean,
+      default: false
+    }
+  },
+  components: {
+    TaskList
+  }
+};
 </script>

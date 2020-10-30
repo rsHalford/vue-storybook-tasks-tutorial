@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,800');
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,800");
 html,
 body {
   margin: 0;
@@ -190,15 +190,15 @@ textarea {
   hyphens: auto;
 }
 .type-light {
-  font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 .type-bold {
-  font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
 .type-italic {
-  font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: italic;
 }
@@ -217,7 +217,7 @@ select {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: 400;
   color: #333;
   font-size: 16px;
@@ -229,7 +229,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: 400;
   margin: 0;
   padding: 0;
@@ -285,9 +285,9 @@ input[type="password"],
 textarea {
   font-size: 14px;
   line-height: 20px;
-  font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: 400;
-  padding: .75rem 0;
+  padding: 0.75rem 0;
   line-height: 1.5rem !important;
   border: none;
   border-radius: 0;
@@ -305,7 +305,7 @@ input[type="text"][disabled],
 input[type="email"][disabled],
 input[type="password"][disabled],
 textarea[disabled] {
-  opacity: .5;
+  opacity: 0.5;
 }
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px white inset;
@@ -332,7 +332,7 @@ input:-webkit-autofill {
   transform: translate3d(-50%, -50%, 0);
   background: transparent;
   box-shadow: #2cc5d2 0 0 0 1px inset;
-  content: '';
+  content: "";
   display: block;
 }
 .checkbox input[type="checkbox"]:checked + span:before {
@@ -341,7 +341,7 @@ input:-webkit-autofill {
   box-shadow: none;
   color: #2cc5d2;
   margin-top: -1px;
-  font-family: 'percolate';
+  font-family: "percolate";
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -389,7 +389,10 @@ input:-webkit-autofill {
 @font-face {
   font-family: "percolate";
   src: url("/icon/percolate.eot?-5w3um4");
-  src: url("/icon/percolate.eot?#iefix5w3um4") format("embedded-opentype"), url("/icon/percolate.woff?5w3um4") format("woff"), url("/icon/percolate.ttf?5w3um4") format("truetype"), url("/icon/percolate.svg?5w3um4") format("svg");
+  src: url("/icon/percolate.eot?#iefix5w3um4") format("embedded-opentype"),
+    url("/icon/percolate.woff?5w3um4") format("woff"),
+    url("/icon/percolate.ttf?5w3um4") format("truetype"),
+    url("/icon/percolate.svg?5w3um4") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -809,10 +812,10 @@ a:focus {
   outline: none;
 }
 .list-heading {
-  letter-spacing: .3em;
-  text-indent: .3em;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
   text-transform: uppercase;
-  font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
   font-size: 11px;
   padding-left: 15px;
@@ -948,7 +951,7 @@ a:focus {
 .wrapper-message .title-message {
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
   color: #555;
 }
@@ -982,7 +985,7 @@ a:focus {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
   color: #1c3f53;
   display: inline-block;
